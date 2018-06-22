@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Checkout Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+</body>
+<h1> CHECKOUT PAGE </h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fablix</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/project1/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/project1/MovieServlet">Top 20</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/project1/search.html">Advanced Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Form Fill-->
+<form id="checkout-form" method="post" action="#">
+	<div id = "login_error_message"></div>
+    <label><b>First Name</b></label>
+    <input type="text" placeholder="First Name" name="first_name">
+    <br>
+    <label><b>Last Name</b></label>
+    <input type="text" placeholder="Last Name" name="last_name">
+    <br>
+    <label><b>Credit Card Number</b></label>
+    <input type="text" placeholder="Credit Card #" name="credit_card_number">
+    <br>
+    <label><b>Credit Card Expiration Date </b></label>
+    <input type="text" placeholder="expiration date" name="card_exp_date">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<div>
+	<h3> Shopping Cart </h3>
+		<p id="checkout-cart"> </p>
+</div>
+
+
+
+
+
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./checkout.js"></script>
+<!--Dyamic Content-->
+
+<script>
+alert("checkout.html page loaded...");
+</script>
+
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type="text/css" href = "stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<title>Insert title here</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Fablix</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/project1/employee_dashboard.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/project1/insert_new_star.html"> Insert Stars </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="/project1/show_metadata.html"> Show MetaData </a>
+		      </li>
+		      <li class="nav-item">
+			       <a class="nav-link " href="/project1/add_movie.html"> Add Movie </a>
+			  </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="/project1/employee_login.html">Login</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class = "main_heading_div">
+			<h1 class = "main_heading"> Fabflix, Add a Star </h1>
+		</div>
+		
+		<!-- Adding a star form -->
+		<div class="forms">
+			<form id="add_star_form" method="get" action="#">
+			<p style="color:light blue"> a * next to the field is required</p>
+			   <label><b>Star Name</b></label>
+			   <input id = "star_name" type="text" placeholder="Star Name*" name="star_name">
+			   <br>
+			   <label><b>Birth year</b></label>
+			   <input type="text" placeholder="Birthyear" name="birth_year">
+			   <br>
+			   <input id = "submit" type="submit" value="submit" onclick = "validateForm()">
+			</form>
+			<div class = "server_response">
+				<p id = "success_insertion_of_star"></p>
+			</div>
+		</div>
+		
+		<!-- include jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- include our own JS file -->
+		<script src="./insert_new_star.js"></script>	
+		
+</body>
+</html>

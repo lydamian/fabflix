@@ -1,0 +1,16 @@
+Note: You are required to write an explanation of how/where you use the LIKE predicate in your codebase.
+ You should put this in a text file (plain text or markdown) in your Github repository, for example, 
+ "like-predicate.txt", or "like-predicate.md" 
+ 
+ In the advanced search: 
+	For the title, year, directors and stars name we used like %x% where x was the value of their search. We 
+	used like in this scenario because a person may not fully know the complete exact title, year or directors
+	but may know only part of that string.
+ 
+ 
+ In the browse: 
+	We used like in the title search. We used like x% where x is the value searched for since in our implementation
+	the user can select a letter from a dropdown bar. Therefore it is unlikely that a movie will be EXACTLY named 
+	after a single letter. Since we wanted to search for movies that started with that letter we did like x% where x is the letter.
+	
+ 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type="text/css" href = "stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<title>Insert title here</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Fablix</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/project1/employee_dashboard.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/project1/insert_new_star.html"> Insert Stars </a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="/project1/show_metadata.html"> Show MetaData </a>
+		      </li>
+		      <li class="nav-item">
+			     <a class="nav-link " href="/project1/add_movie.html"> Add Movie </a>
+			  </li>
+		      <li class="nav-item">
+		        <a class="nav-link " href="/project1/employee_login.html">Login</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class = "main_heading_div">
+			<h1 class = "main_heading"> Fabflix MetaData </h1>
+		</div>
+		
+		<!-- Showing Metadata -->
+		<div id = "metadata">
+			<h3> 'moviedb' Metadata</h3>
+			<ul>
+			  <li>movies</li>
+			  	<ul>
+			  		<li>id varchar(10)</li>
+			  		<li>title varchar(100)</li>
+			  		<li>year integer</li>
+			  		<li>director</li>
+			  	</ul>
+			  <li>stars</li>
+			  	<ul>
+			  		<li>id varchar(50)</li>
+			  		<li>name varchar(100)</li>
+			  		<li>birthYear integer</li>
+			  	</ul>
+			  <li>stars_in_movies</li>
+			 	 <ul>
+			  		<li>starId varchar(10)</li>
+			  		<li>movieId varchar(10)</li>
+			  	</ul>	
+			  <li>genres</li>
+				  <ul>
+			  		<li>id integer</li>
+			  		<li>name varchar(32)</li>
+			  	</ul>
+			  <li>genres_in_movies</li>
+			  	<ul>
+			  		<li>genreId integer</li>
+			  		<li>movieId varchar(10)</li>
+			  	</ul>
+			  <li>customers</li>
+			  	<ul>
+			  		<li>id integer</li>
+			  		<li>firstName varchar(50)</li>
+			  		<li>lastName varchar(50)</li>
+			  		<li>ccId varchar(20)</li>
+			  		<li>address varchar(20)</li>
+			  		<li>email varchar(50)</li>
+			  		<li>password varchar(20)</li>
+			  	</ul>
+			  <li>sales</li>
+			  	<ul>
+			  		<li>id integer</li>
+			  		<li>customerId integer</li>
+			  		<li>movieId varchar(10)</li>
+			  		<li>saleDate date</li>
+			  	</ul>
+			  <li>creditcards</li>
+			  	<ul>
+			  		<li>id varchar(20)</li>
+			  		<li>firstName varchar(50)</li>
+			  		<li>lastNam varchar(50)</li>
+			  		<li>expiration date</li>
+			  	</ul>
+			  <li>ratings</li>
+			  	<ul>
+			  		<li>movieId varchar(10)</li>
+			  		<li>rating float</li>
+			  		<li>numVotes integer</li>
+			  </ul>
+			  <li>employees</li>
+			  	<ul>
+			  		<li>email varchar(50)</li>
+			  		<li>password varchar(20)</li>
+			  		<li>fullname varchar(100)</li>
+			  	</ul>	
+		</div>
+		
+		
+		
+		
+		<!-- include jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- include our own JS file -->
+		<script src="./show_metadata.js"></script>	
+</body>
+</html>

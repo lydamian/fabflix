@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fablix</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/project1/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/project1/MovieServlet">Top 20</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/project1/search.html">Advanced Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="login.html">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<form id="search_form" method="get" action="#">
+    <label><b>Title</b></label>
+    <input type="text" placeholder="Movie Title:" name="title">
+    <br>
+    <label><b>Year</b></label>
+    <input type="text" placeholder="Year:" name="year">
+    <br>
+    <label><b>Directors</b></label>
+    <input type="text" placeholder="Director:" name="directors">
+    <br>
+    <label><b>Stars name</b></label>
+    <input type="text" placeholder="Actor:" name="stars_name">
+    <br>
+    <input type="submit" value="search">
+</form>
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./search.js"></script>
+</body>
+</html>

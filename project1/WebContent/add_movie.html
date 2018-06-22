@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type="text/css" href = "stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Add a Movie</title>
+</head>
+<body>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#">Fablix</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="/project1/employee_dashboard.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="/project1/insert_new_star.html"> Insert Stars </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="/project1/show_metadata.html"> Show MetaData </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="/project1/add_movie.html"> Add Movie </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link " href="/project1/employee_login.html">Login</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+	<div class = "main_heading_div">
+		<h1 class = "main_heading">Add a Movie Page</h1>
+	</div>
+	
+	<!-- Adding a star form -->
+	<div class="forms">
+		<form id="add_movie_form" method="get" action="#">
+		   <label><b>Movie Title</b></label>
+		   <input type="text" placeholder="Movie Title*" id="movie_title" name="movie_title" required>
+		   <br>
+		   <label><b>Movie Director</b></label>
+		   <input type="text" placeholder="Movie Director" id = "movie_director" name="movie_director" required>
+		   <br>
+		   <label><b>Movie Year</b></label>
+		   <input type="text" placeholder="Movie Year" id="movie_year" name="movie_year" required>
+		   <br>
+		   <label><b>Star Name</b></label>
+		   <input type="text" placeholder="Star Name" id = "star_name" name="star_name" required>
+		   <br>
+		   <label><b>Genre Type</b></label>
+		   <input type="text" placeholder="Genre Type" id = "genre_name" name="genre_name" required>
+		   <br>
+		   <input type="submit" value="submit">
+		</form>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="./add_movie.js"></script>
+</body>
+</html>
