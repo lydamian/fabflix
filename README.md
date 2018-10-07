@@ -1,5 +1,14 @@
 #CS122B Project
 
-The script to calculate the average time values for a log value is located in /project1/calcAverage.c
-Compile this script with gcc calcAverage.c -o calcAverage
-Run the script with calcAverage < logInputFile.txt
+Description: 
+  Full Stack Web Application to Search, Add, and Retrieve Information in a movie database including actors, movies, years, directors etc...
+  
+Stack: html, css, javaScript, jQuery, BootStrap, tomcat, Java, (Eclipse IDE).
+
+Features Include: 
+  - Full Text Search
+  - Connection Pooling
+  - Password Encryption
+  - Fuzzy Search
+  - Caching of Search Results
+  - ReCaptcha
